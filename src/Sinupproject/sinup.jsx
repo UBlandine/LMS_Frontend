@@ -1,5 +1,6 @@
 import axios from 'axios'
 import './sinup.css'
+import { Link } from "react-router-dom";
 import Footer from '../Footer/Footer'
 import Navigation from '../components/Navigation'
 import { useState } from 'react'
@@ -31,13 +32,10 @@ function SinUp() {
     })
   }
 
-  
-
-  
   return (
     <>
-    <div className='signup-container'>
-     <Navigation/>
+    <Navigation/>
+    <div className='signup-container' data-aos="fade-up" data-aos-duration={2000}>
        <div className='wrapper'> 
         
         <form action='' method='POST' onSubmit={handleSignUp}>
@@ -45,7 +43,7 @@ function SinUp() {
               
             
             <div className="sinup3">
-            <label  className='co'>Full Name</label><br/>
+            <label  className='fullnames-signup-label'>Full Name</label><br/>
             <input type="text"  required  className='sinupthird' name="firstName" onChange={(e)=>setFirstName(e.target.value)}/><br/>
 
             </div><br />
@@ -60,13 +58,13 @@ function SinUp() {
 
  
             <div className="sinup5">
-            <label >password</label><br/>
+            <label >Password</label><br/>
             <input type="password"  required className='sinupsix' name="Password" onChange={(e)=>setPassword(e.target.value)}/><br/>
 
             </div><br/>
         
             <div className="sinup9">
-            <label  className='co'>confirm password</label><br/>
+            <label  className='co'>Confirm password</label><br/>
             <input type="password"  required className='sinupsix' name="confirmPassword" onChange={(e)=>setConfirmPassword(e.target.value)}/><br/>
 
             </div><br/><br/>
@@ -79,7 +77,12 @@ function SinUp() {
             <button type="submit" className='btnsinup'>SignUp</button><br/><br/>
             
             <div className="register-link">
-                <p className='sinup6'>Already have an account?<a href="login" className='up'>Login In Here</a></p>
+                <p className='sinup6'>Already have an account?
+                
+              <Link to="/login" className="up">
+              Login In Here
+            </Link>
+                </p>
                 </div>
                 </div>
             </form>   

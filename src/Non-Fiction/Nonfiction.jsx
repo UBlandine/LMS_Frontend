@@ -10,7 +10,7 @@ import non5 from '../assets/non5.jpg'
 import non7 from '../assets/non7.jpg'
 import non8 from '../assets/non8.jpg'
 import './Nonfiction.css'
-
+import {Link} from 'react-router-dom'
 import Footer from '../Footer/Footer'
 import Navigation from '../components/Navigation'
 
@@ -24,31 +24,31 @@ function Nonfiction() {
     <div className='image-book-products-1'>
       <div><img src={non1} alt="" /></div>
       <div className='title-book-products-1'>
-        <p><a href="http://127.0.0.1:5500/Library-Mgnt-System-Frontend/src/Non-Fiction/nan.html">Learn  more ...</a></p> 
+         <p><Link to="/BookDescription">Learn more...</Link></p> 
       </div>
     </div>
     <div className='image-book-products-2'>
     <div><img src={non2} alt="" /></div>
     <div className='title-book-products-2'>
-    <p><a href="http://127.0.0.1:5500/Library-Mgnt-System-Frontend/src/Non-Fiction/nan.html">Learn  more ...</a></p>
+     <p><Link to="/BookDescription">Learn more...</Link></p>
       </div>
     </div>
     <div className='image-book-products-3'>
     <div><img src={non3} alt="" /></div>
     <div className='title-book-products-3'>
-    <p><a href="http://127.0.0.1:5500/Library-Mgnt-System-Frontend/src/Non-Fiction/nan.html">Learn  more ...</a></p>
+     <p><Link to="/BookDescription">Learn more...</Link></p>
       </div>
     </div>
     <div>
     <div className='image-book-products-4'><img src={non4} alt="" /></div>
     <div className='title-book-products-4'>
-    <p><a href="http://127.0.0.1:5500/Library-Mgnt-System-Frontend/src/Non-Fiction/nan.html">Learn  more ...</a></p>
+     <p><Link to="/BookDescription">Learn more...</Link></p>
       </div>
     </div>
     <div>
     <div className='image-book-products-4'><img src={non12} alt="" /></div>
     <div className='title-book-products-4'>
-    <p><a href="http://127.0.0.1:5500/Library-Mgnt-System-Frontend/src/Non-Fiction/nan.html">Learn  more ...</a></p>
+     <p><Link to="/BookDescription">Learn more...</Link></p>
       </div>
     </div>
   </div>
@@ -56,31 +56,31 @@ function Nonfiction() {
     <div className='image-book-products-1'>
       <div><img src={non5} alt="" /></div>
       <div className='title-book-products-1'>
-        <p><a href="http://127.0.0.1:5500/Library-Mgnt-System-Frontend/src/Non-Fiction/nan.html">Learn  more ...</a></p>
+         <p><Link to="/BookDescription">Learn more...</Link></p>
       </div>
     </div>
     <div className='image-book-products-2'>
     <div><img src={non6} alt="" /></div>
     <div className='title-book-products-2'>
-    <p><a href="http://127.0.0.1:5500/Library-Mgnt-System-Frontend/src/Non-Fiction/nan.html">Learn  more ...</a></p>
+     <p><Link to="/BookDescription">Learn more...</Link></p>
       </div>
     </div>
     <div className='image-book-products-3'>
     <div><img src={non7} alt="" /></div>
     <div className='title-book-products-3'>
-    <p><a href="http://127.0.0.1:5500/Library-Mgnt-System-Frontend/src/Non-Fiction/nan.html">Learn  more ...</a></p>
+     <p><Link to="/BookDescription">Learn more...</Link></p>
       </div>
     </div>
     <div>
     <div className='image-book-products-4'><img src={non8} alt="" /></div>
     <div className='title-book-products-4'>
-    <p><a href="http://127.0.0.1:5500/Library-Mgnt-System-Frontend/src/Non-Fiction/nan.html">Learn  more ...</a></p>
+     <p><Link to="/BookDescription">Learn more...</Link></p>
       </div>
     </div>
     <div>
     <div className='image-book-products-4'><img src={non10} alt="" /></div>
     <div className='title-book-products-4'>
-    <p><a href="http://127.0.0.1:5500/Library-Mgnt-System-Frontend/src/Non-Fiction/nan.html">Learn  more ...</a></p>
+     <p><Link to="/BookDescription">Learn more...</Link></p>
       </div>
     </div>
   </div>
